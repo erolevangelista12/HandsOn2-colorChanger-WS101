@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Color Changer</title>
+  <style>
+    body {
+      display: flex;
+      background-color: #FFD580;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9400D3;
+    }
+
+    #myDiv {
+      border: 2px solid black;
+      border-radius: 50px;
+      padding: 170px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    #myButton {
+      border: 2px solid #9400D3;
+      border-radius: 50px;
+      background-color: #CF9FFF;
+      font-size: 1.25em;
+      color: #000000;
+      padding: 10px 60px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript colorChanger() Hands-On</h1>
+
+<div id="myDiv" style="background-color: green;"></div>
+
+<button id="myButton">Click Me!</button>
+
+<script>
+  const button = document.getElementById("myButton");
+  const div = document.getElementById("myDiv");
+
+  button.addEventListener("click", function() {
+    if (div.style.backgroundColor === "green") {
+      div.style.backgroundColor = "blue";
+    } else {
+      div.style.backgroundColor = "green";
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
